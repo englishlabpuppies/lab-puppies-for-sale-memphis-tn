@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your happy Lab puppy in Memphis, TN! Our trusted guide helps you choose a healthy, joyful friend from a good breeder.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://english-lab-puppies.com/lab-puppies-memphis-tn">
+    <title>Lab Puppies for Sale Memphis TN Guide</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #4a7b9d;
+            --secondary: #f8b24f;
+            --light: #f5f5f5;
+            --dark: #333;
+            --accent: #8fb8c7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            font-weight: 500;
+            position: relative;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section with Parallax */
+        .hero {
+            height: 80vh;
+            background-image: url('https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 70px;
+            position: relative;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .btn:hover {
+            background-color: #e6a037;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Content Sections */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-light {
+            background-color: white;
+        }
+        
+        .section-dark {
+            background-color: #f0f0f0;
+        }
+        
+        .content-block {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .content-block.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .highlight {
+            background-color: var(--accent);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .stats-box {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stats-box h3 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Image Gallery with Hover Effects */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1.5rem;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-details p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .copyright {
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: left 0.3s ease;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            
+            nav ul.active {
+                left: 0;
+            }
+            
+            nav li {
+                margin: 1rem 0;
+            }
+            
+            .hero {
+                height: 60vh;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Lab<span>Puppies</span></div>
+            <div class="mobile-menu">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Labs</a></li>
+                    <li><a href="#finding">Finding a Puppy</a></li>
+                    <li><a href="#health">Health & Care</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find Your Happy & Healthy Lab Puppy in Memphis, TN</h1>
+            <p>Your trusted guide to finding a healthy, happy Labrador companion in the Memphis area</p>
+            <a href="#contact" class="btn">Find Your Puppy</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction -->
+        <section id="about" class="section-light">
+            <div class="content-block">
+                <h2>Welcome to Your Labrador Journey</h2>
+                <p>Are you looking for happy, friendly <a href="https://english-lab-puppies.com/lab-puppies-memphis-tn" target="_blank">Lab puppies for sale Memphis TN</a>? You are in the right place. The Labrador Retriever is one of the most loved dog breeds in America. They are known for their kind eyes, wagging tails, and loving hearts. Bringing a Lab puppy into your home is a big and wonderful step. This guide will help you find a healthy and happy puppy from a good person. We will talk about how to find good breeders, what to ask them, and how to get ready for your new friend.</p>
+                <p>The journey to find the perfect puppy can feel long. But with good information, you can feel sure and happy about your choice. Let us walk you through the process.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Why Choose a Labrador Retriever?</h2>
+                <p>Labs are not popular without reason. They have a personality that fits well with many families. They are smart, friendly, and full of energy. This makes them great playmates for children. They are also very loyal, making them wonderful companions for single people or couples.</p>
+                <p>Labs come in three beautiful colors: black, yellow, and chocolate. No matter the color, they all share the same loving nature. They are dogs that love to play fetch, swim, and just be with their people. If you want a dog that will join in on family fun, a Lab is a perfect choice.</p>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Black Lab puppy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chocolate Lab puppy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Finding a Puppy -->
+        <section id="finding" class="section-dark">
+            <div class="content-block">
+                <h2>Finding Good Lab Puppies for Sale Memphis TN</h2>
+                <p>Your most important job is to find a puppy from a good source. A good breeder cares about the health and happiness of their dogs. They are not just trying to make money. You want to avoid "puppy mills." These are places that breed too many dogs and do not care for them well.</p>
+                <p>So, how do you find a good person who has <strong>Lab puppies for sale Memphis TN</strong>?</p>
+                <ul>
+                    <li><strong>Ask Your Vet:</strong> Local veterinarians often know who the good breeders are in the area.</li>
+                    <li><strong>Visit Local Dog Clubs:</strong> The Memphis Area Labrador Retriever Club can be a great resource. Breed clubs have members who follow strict rules for breeding.</li>
+                    <li><strong>Look for Breeder Reviews:</strong> Good breeders will have happy customers. Look for websites or social media pages with real reviews and photos.</li>
+                    <li><strong>Meet the Breeder:</strong> A good breeder will want to meet you, too! They will ask you questions to make sure you can give one of their puppies a good home.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Questions to Ask Your Memphis Lab Breeder</h3>
+                <p>When you talk to a breeder, you need to ask good questions. This shows you are serious and helps you learn about the puppy's background. Here is a list of questions to use:</p>
+                <div class="highlight">
+                    <ul>
+                        <li>Can I meet the puppy's mother and father?</li>
+                        <li>What health tests have the parent dogs had?</li>
+                        <li>How old are the puppies? (They should not leave their mother before 8 weeks old).</li>
+                        <li>Have the puppies seen a vet for a check-up and their first shots?</li>
+                        <li>What do you feed the puppies?</li>
+                        <li>How do you socialize the puppies? (This means getting them used to people, sounds, and handling).</li>
+                    </ul>
+                </div>
+                <p>A good breeder will answer all these questions happily. They will be proud of the care they give.</p>
+            </div>
+        </section>
+
+        <!-- Health & Genetics -->
+        <section id="health" class="section-light">
+            <div class="content-block">
+                <h2>The Importance of Health and Genetics</h2>
+                <p>Labs are generally healthy dogs, but they can have some genetic problems. A good breeder tests their parent dogs to lower the risk of these issues. You should ask to see proof of these health checks.</p>
+                <p>Common health tests for Labs include checks for:</p>
+                <ul>
+                    <li><strong>Hip and Elbow Dysplasia:</strong> This is a problem with the joints.</li>
+                    <li><strong>Eye Conditions:</strong> Like cataracts or problems with the retina.</li>
+                    <li><strong>Exercise-Induced Collapse (EIC):</strong> A condition that causes weakness after hard exercise.</li>
+                </ul>
+                <p>Choosing a puppy from health-tested parents is the best way to ensure a long, healthy life for your new friend. It is a very important step when looking for <strong>Lab puppies for sale Memphis TN</strong>.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Understanding the Popularity of the Labrador</h2>
+                <p>It is no secret that people love Labrador Retrievers. But how popular are they, really? The American Kennel Club (AKC) has kept a list of the most popular dog breeds for over 30 years. According to the AKC, the Labrador Retriever has been the number one most popular dog breed in the United States for an amazing 31 years in a row. This is a record no other breed has ever matched. This long-term popularity is a powerful sign of the breed's wonderful temperament and its ability to fit into many different kinds of homes and lifestyles.</p>
+                
+                <div class="stats-box">
+                    <h3>31 Years</h3>
+                    <p>Labrador Retrievers have been America's most popular dog breed for 31 consecutive years</p>
+                    <p><em>Source: American Kennel Club (AKC)</em></p>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>Getting Your Home Ready for a New Puppy</h2>
+                <p>Before you bring your puppy home, you need to make your home safe and ready. Think of it like preparing for a new baby. You will need to "puppy-proof" your space.</p>
+                <ul>
+                    <li><strong>Safe Space:</strong> Set up a crate or a small pen with a soft bed. This will be your puppy's safe place to sleep and rest.</li>
+                    <li><strong>Puppy Supplies:</strong> You will need a food and water bowl, high-quality puppy food, a collar and leash, and lots of safe toys for chewing.</li>
+                    <li><strong>Hide Dangers:</strong> Pick up small objects a puppy could swallow. Hide electrical cords and make sure toxic plants and chemicals are out of reach.</li>
+                </ul>
+                <p>Having everything ready will make your puppy's first day less stressful for both of you.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Your First Weeks with Your Lab Puppy</h2>
+                <p>The first few weeks are a special time for bonding. Your puppy is learning about the world, and you are learning about your puppy. Be patient and gentle.</p>
+                <ul>
+                    <li><strong>Start Training Early:</strong> Use simple, positive words like "good dog!" and give small treats. Start with easy commands like "sit" and "come."</li>
+                    <li><strong>Set a Routine:</strong> Take your puppy outside to go to the bathroom first thing in the morning, after meals, and after naps. A routine helps them learn quickly.</li>
+                    <li><strong>Socialization:</strong> After your puppy has its vaccines, introduce it to new places, friendly people, and other calm, vaccinated dogs. This helps them grow into a confident adult dog.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-dark">
+            <div class="content-block">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How much do Lab puppies cost in Memphis?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The price for a Labrador puppy in Memphis can vary based on the breeder's reputation, the puppy's pedigree, and health testing. Typically, you can expect to pay between $800 and $1,500 for a well-bred Labrador puppy from a responsible breeder.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the best age to bring a Lab puppy home?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Labrador puppies should stay with their mother and littermates until they are at least 8 weeks old. This period is crucial for their social development. Reputable breeders will not separate puppies from their mothers before this age.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are Labs good with children?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Labrador Retrievers are famously good with children. They are patient, gentle, and playful, making them excellent family pets. However, as with any dog, supervision is important when very young children interact with puppies.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How much exercise does a Lab puppy need?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Labrador puppies have lots of energy! They need several short play sessions throughout the day. A good rule is 5 minutes of exercise per month of age, up to twice a day. For example, a 3-month-old puppy would need about 15 minutes of exercise twice daily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-light">
+            <div class="content-block">
+                <h2>Contact Us</h2>
+                <p>If you're interested in finding quality <a href="https://lab-puppies-for-sale-usa.netlify.app/" target="_blank">Lab puppies for sale USA</a> or have questions about Labrador Retrievers, please don't hesitate to reach out to us.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <p><strong>Phone:</strong> 931-994-9393</p>
+                        <p><strong>Address:</strong> Lawrenceburg, Tennessee, USA</p>
+                        <p>We're happy to answer any questions you have about Labrador Retrievers, breeding practices, or finding the right puppy for your family.</p>
+                    </div>
+                    
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/escalantekennels" target="_blank" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/escalantekennels/" target="_blank" aria-label="Instagram">ig</a>
+                        <a href="https://www.youtube.com/@escalantekennels" target="_blank" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Your Phone</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lab Puppies Memphis</h3>
+                    <p>Your trusted resource for finding healthy, happy Labrador Retriever puppies in the Memphis, TN area and beyond.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Labs</a>
+                    <a href="#finding">Finding a Puppy</a>
+                    <a href="#health">Health & Care</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Phone: 931-994-9393</p>
+                    <p>Address: Lawrenceburg, Tennessee, USA</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Lab Puppies Memphis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+
+        // Scroll Animation for Content Blocks
+        const contentBlocks = document.querySelectorAll('.content-block');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        contentBlocks.forEach(block => {
+            observer.observe(block);
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                // Toggle the plus/minus icon
+                const icon = question.querySelector('span:last-child');
+                icon.textContent = faqItem.classList.contains('active') ? '-' : '+';
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    document.querySelector('nav ul').classList.remove('active');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
